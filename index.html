@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Music Player</title>
+</head>
+
+<body>
+    <h1 class="title">Music Player <i class="fas fa-compact-disc"></i></h1>
+    <div class="container">
+        <div class="player-container">
+            <img src="img/Cazzette - Beam Me Up.jpg" class="cover cover-md" alt="">
+            <h1><span id="artist">Cazzette</span> - <span id="title">Beam Me Up</span></h1>
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+
+            <div class="duration">
+                <span id="minutes">00</span> <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+            <i class="fas fa-backward"></i>
+            <i class="fas fa-play" id="play-pause"></i>
+            <i class="fas fa-forward"></i>
+        </div>
+        <div class="songs-list"></div>
+    </div>
+
+    <audio src="audio/Cazzette - Beam Me Up.mp3"></audio>
+
+    <!-- JavaScript File -->
+    <script src="index.js"></script>
+</body>
+
+</html>
